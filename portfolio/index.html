@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <nav class="top-nav">
+        <p id="name">Jacob Anderson</p>
+        <button id="contact-button" data-target="#contact-pop">Contact</button>
+    </nav>
+
+    <div id="contact-pop">
+        
+        <div id="contact-pop-header">
+            <h2>Let's Talk!</h2>
+            <button id="contact-pop-close" data-close-button>&times;</button>
+        </div>
+
+        <form id="contact-form">
+            <label>Email: </label>
+            <input type="email" class="input-fields" placeholder="Enter Email"></input>
+            
+            <label>Subject: </label>
+            <input type="text" class="input-fields" placeholder="Enter Subject"></input>
+
+            <label>Message: </label>
+            <textarea placeholder="Type Message" name="message" class="input-fields" cols="30" rows="10"></textarea>
+        </form>
+
+    </div>
+    <div id="overlay"></div>
+
+    <div class="intro-container">
+        <h1 id="intro">HI, I'M JACOB<br>I'M A WEB DEVELOPER</h1>
+        <img id="logo" src="/img/alphabet-1896937_960_720.png" alt="">
+    </div>
+
+    <footer>
+        <a href="https://codepen.io/your-work/" target="_blank"><img src="/img/codepen icon.png" alt=""></a>
+        <a href="https://github.com/Ander-Jac?tab=projects" target="_blank"><img src="/img/Github icon.png" alt=""></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img src="/img/linkedin icon.png" alt=""></a>
+    </footer>
+
+</body>
+</html>
