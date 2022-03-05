@@ -1,0 +1,37 @@
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container {
+    width: 360px;
+}
+#input-field {
+    width: 300px;
+    height: 44px;
+    border: 2px solid black;
+    vertical-align: middle;
+    font-size: 25px;
+    margin-right: 1px;
+}
+#add-to-do {
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    vertical-align: middle;
+    font-size: 30px;
+}
+.to-do {
+    margin-top: 25px;
+}
+.paragraph-styling {
+    margin: 0;
+    cursor: pointer;
+    font-size: 25px;
+}
