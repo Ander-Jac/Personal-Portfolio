@@ -1,4 +1,3 @@
-
 html {
     display: table;
     margin: auto;
@@ -8,6 +7,9 @@ body {
     display: table-cell;
     vertical-align: middle;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgba(100,100,100);
+    color: white;
+    padding-top: 10%;
 }
 .container {
     width: 360px;
@@ -29,9 +31,17 @@ body {
 }
 .to-do {
     margin-top: 25px;
+    color: black;
 }
 .paragraph-styling {
     margin: 0;
     cursor: pointer;
     font-size: 25px;
+}
+#to-do-container {
+    background-color: white;
+    height: 60vh;
+    margin-top: 20px;
+    color: black;
+    padding: 15px;
 }
