@@ -5,28 +5,29 @@
     color: white;
 }
 body {
-    background-color: rgba(0, 50, 175);
+    background-image: url(img/background2.jpg);
+    background-size: contain;
 }
 
 
 .top-nav {
     display: flex;
+    background-color: rgba(25,25,25, .9);
     align-items: center;
     justify-content: space-between;
     padding-right: 10%;
     padding-left: 10%;
     position: fixed;
-    height: 45px;
+    height: 40px;
     width: 80%;
-    font-weight: 100;
     top: 0;
+    z-index: 1;
 }
 #contact-button {
     background-color: transparent;
     padding: 10px;
     border: none;
     font-size: 1rem;
-    font-weight: 100;
 }
 #contact-button:hover {
     color: rgb(200, 200, 200);
@@ -41,7 +42,7 @@ body {
     transform: translate(-50%, -50%)scale(0);
     width: 70%;
     height: 65%;
-    background-color: rgba(240,240,240);
+    background-color: white;
     z-index: 1;
     border-radius: 10px;
     transition: 200ms ease-in-out;
@@ -116,44 +117,38 @@ body {
 }
 
 
-.intro-container {
+#intro-container {
     height: 100vh;
     position: relative;
-    top: 45px;
-    z-index: -1;
 }
-.intro-container #intro {
-    position: absolute;
-    margin-top: 10%;
-    margin-left: 10%;
+#intro {
+    position: fixed;
+    top: 22%;
+    left: 275px;
+    white-space: nowrap;
     font-size: 3rem;
     line-height: 225%;
+    color: black
 }
-.intro-container #logo {
-    width: 250px;
-    position: absolute;
-    right: 15%;
-    top: 10%;
-    transform: rotate(10deg);
-    z-index: -1;
-}
-
 
 #projects-container {
+    width: 85%;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#projects-grid {
     display: grid;
     grid-template-columns: auto auto;
     width: 80%;
     margin: auto;
-    margin-bottom: 50px;
-    margin-top: 200px;
-    gap: 5px;
+    gap: 25px;
 }
 .project {
-    height: 95%;
+    height: 100%;
     position: relative;
-    border: 2px solid black;
-    border-radius: 15px;
-    
+    border: 5px solid black;
+    border-radius: 20px;
 }
 .project img {
     width: 100%;
@@ -184,11 +179,11 @@ body {
 
 footer {
     display: flex;
-    background-color: rgb(100,100,100);
+    background-color: white;
     height: 40px;
     align-items: center;
     justify-content: center;
-    border: 2px solid black;
+    border-top: 2px solid black;
 }
 footer img {
     width: 27px;
@@ -203,14 +198,10 @@ footer img {
         margin-top: 35px;
         gap: 10px;
     }
-    .intro-container #intro {
-        font-size: 7vw;
-    }
-    .intro-container #logo {
-        width: 37%;
-    }
-    .intro-container {
-        margin-top: 90px;
+    #intro {
+        font-size: 7.5vw;
+        margin-left: 10vw;
+        margin-top: 42vh;
     }
     #contact-pop {
         width: 98%;
